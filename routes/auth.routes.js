@@ -20,4 +20,8 @@ module.exports = function(app) {
   );
 
   app.post("/auth/signin", controller.signin);
+
+  app.get('/auth', (req, res) => {
+    res.send("GET Request Called")
+  })
 };
